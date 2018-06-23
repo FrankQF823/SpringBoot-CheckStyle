@@ -5,15 +5,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.frank.eurekaservice.controller.dto.Person;
 
+/**
+ * 
+ * @author Administrator
+ *
+ */
 @RestController
 @RequestMapping("/")
 public class MyController {
 
-	@RequestMapping("/my")
-	public Person myPerson() {
-		Person p = new Person();
-		p.setName("Frank");
-		p.setAge("18");
-		return p;
-	}
+  @RequestMapping("/my")
+  public Person myPerson() {
+    Person p = new Person();
+    p.setName("Frank");
+    p.setAge("18");
+    return p;
+  }
 }
